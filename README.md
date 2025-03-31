@@ -32,11 +32,6 @@ This project is an AI-powered system that processes user queries, performs web s
    ```
 
 3. **Install Dependencies**:
-   Install the required Python packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-   If `requirements.txt` is not provided, install the following manually:
    ```bash
    pip install requests torch transformers faiss-cpu numpy python-dotenv aiohttp
    ```
@@ -47,8 +42,8 @@ This project is an AI-powered system that processes user queries, performs web s
    - Ensure the Ollama server is running locally (`ollama serve`).
    - Pull required models:
      ```bash
-     ollama pull deepseek-r1:14b
-     ollama pull google_gemma-3-12b-it-Q6_K_L:latest
+     deepseek-r1:14b 
+     gemma:12b [But im using google_gemma-3-12b-it-Q6_K_L:latest (from Huggingface GGUF)]
      ```
 
 5. **Set Up Environment Variables**:
